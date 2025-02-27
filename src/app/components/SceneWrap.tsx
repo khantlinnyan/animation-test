@@ -4,7 +4,7 @@ import Scene from "./Scene";
 import { Canvas } from "@react-three/fiber";
 const SceneWrap = () => {
     return (
-        <Canvas>
+        <Canvas shadows>
             <Scene />
         </Canvas>
     )
