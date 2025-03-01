@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <div className="page h-screen ">
           <div className="container m-auto flex flex-col justify-center items-end h-[50vh]">
-            <h4 className="text-[5rem] xl:text-[2rem]  text-white font-bold mt-80">Japanese</h4>
+            <h4 className=" xl:text-[5rem] text-[2rem]  text-white font-bold mt-80">Japanese</h4>
             <h1 className="text-[6rem]  leading-none xl:text-[18rem]  mb-10 xl:mb-0 xl:leading-44 text-white font-bold ">Legend</h1>
           </div>
 
