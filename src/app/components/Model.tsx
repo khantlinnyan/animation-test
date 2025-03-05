@@ -77,11 +77,30 @@ export function Model(props: React.JSX.IntrinsicElements['group']) {
             material={materials['Material.006']}
           />
           <mesh
+            name='lights'
+
             castShadow
             receiveShadow
             geometry={nodes.s14_Material004_0.geometry}
             material={materials['Material.004']}
-          />
+          >
+            <meshStandardMaterial
+              emissive={"#aaaa55"}
+              emissiveIntensity={5}
+              color={"#ffffff"}
+              toneMapped={false}
+            />
+
+            <spotLight
+              color={"#ffffaa"}
+              intensity={100}
+              distance={100}
+              angle={1}
+              penumbra={10}
+              position={[0, -8, 1]}
+              target-position={[0, 0, 0]}
+            />
+          </mesh>
           <mesh
             castShadow
             receiveShadow
