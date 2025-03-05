@@ -10,7 +10,7 @@ export default function Home() {
         <SceneWrap />
       </div>
 
-      <div className="up z-10  w-full absolute overflow-hidden">
+      <div className="up z-10  w-full absolute overflow-hidden hidden md:inline-block">
         <div className="page h-screen ">
           <div className="container m-auto flex flex-col justify-end items-end h-[100vh]">
             <p className="text-white lg:w-2xl px-2.5 text-[1rem] lg:text-2xl mb-20 ">
@@ -52,11 +52,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="down z-[-20]  w-full  absolute  overflow-hidden">
+      <div className="down z-[-20]  w-full  absolute  overflow-hidden ">
         <div className="page h-screen ">
           <div className="container m-auto flex flex-col justify-center h-[50vh]">
-            <h4 className="lg:text-[5rem] text-[3rem] text-white font-bold">Nissan</h4>
-            <h1 className="text-[6rem] lg:text-[18rem] leading-10 mb-10 lg:mb-0 lg:leading-44 text-white font-bold ">SILVIA</h1>
+            <h4 className="lg:text-[5rem] text-[3rem] text-white font-bold pl-3">Nissan</h4>
+            <h1 className="text-[6rem] pl-3 lg:text-[18rem] leading-10 mb-10 lg:mb-0 lg:leading-44 text-white font-bold ">SILVIA</h1>
           </div>
         </div>
         <div className="page h-screen">
