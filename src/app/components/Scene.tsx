@@ -32,7 +32,7 @@ const Scene: React.FC = () => {
   return (
     <Physics>
       {/* <axesHelper args={[100]} /> */}
-      <PerspectiveCamera makeDefault fov={20} position={[0, 2, 5]} />
+      <PerspectiveCamera makeDefault fov={(window.innerWidth<768)?40:20} />
       <Environment preset="city" environmentIntensity={0.2} />
 
       <directionalLight
