@@ -5,7 +5,7 @@ import FloatingText from "./components/ui/floating-text";
 import { useState, useEffect } from "react";
 import Loading from "./loading";
 import IconGroup from "./components/ui/icon-group";
-import { usePortal } from "@/hooks/usePortal";
+
 import { ReactLenis } from "lenis/react";
 
 const SceneWrap = dynamic(() => import("./components/SceneWrap"), {
@@ -25,11 +25,6 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }, []);
-  const iconPortal = usePortal(
-    <div className="fixed z-[999] bottom-[25px] left-5 pointer-events-auto">
-      <IconGroup />
-    </div>
-  );
 
   return (
     <>
@@ -44,7 +39,9 @@ export default function Home() {
             <h1 className="text-2xl sticky top-5 left-5 py-5 px-5 font-bold text-zinc-800">
               NISSAN
             </h1>
-            {iconPortal}
+            <div className="fixed z-[999] bottom-[25px] left-5 pointer-events-auto">
+              <IconGroup />
+            </div>
             <div className="fixed z-[-25] top-0 h-screen w-full bg-zinc-400/20" />
             <div className="sceneWrap fixed -z-10 top-0 h-screen w-full pointer-events-none">
               <SceneWrap />
